@@ -15,4 +15,5 @@ def get_book_info(isbn):
             "categories": book_info.get("categories"),
         }
     else:
+        print(f"An error occurred: {response.status_code}")
         return None
